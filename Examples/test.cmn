@@ -1,5 +1,34 @@
-# --- Imports --- #
+# --- Explicit Constants --- #
+frozen int A = 5
+frozen bool B = True
+frozen char CC = 'C'
+frozen str S = "Explicit Const"
 
-class MyClass
+# --- Implicit Constants --- #
+frozen C = +4
+frozen D = False
+frozen CCC = 'C'
+frozen ST = "Implicit Const"
 
-def MyDef
+# --- Explicit Variables --- #
+int a = -5
+bool b = True
+char cc = 'c'
+str s = "Explicit Var"
+
+# --- Implicit Variables --- #
+c = -6
+d = False
+ccc = 'c'
+st = "Implicit Var"
+
+# --- Testing --- #
+bool E = not False
+int F = 1
+
+# stream STR = "" #Temporary would be input/output stream object
+# STR >> F #Read from cin and place in F (cin would be a input stream object)
+# STR << E #Write E to cout (cout would be a output stream object)
+# STR << st #Write st to cout (cout would be a output stream object)
+
+# raise Exception("Hello World!")
