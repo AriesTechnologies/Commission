@@ -3,28 +3,34 @@ frozen int A = 5
 frozen bool B = True
 frozen char CC = 'C'
 frozen str S = "Explicit Const"
+frozen list L = [1,2]
 
 # --- Implicit Constants --- #
 frozen C = +4
 frozen D = False
 frozen CCC = 'C'
 frozen ST = "Implicit Const"
+frozen LL = [1,2]
 
 # --- Explicit Variables --- #
 int a = -5
 bool b = True
 char cc = 'c'
 str s = "Explicit Var"
+list l = [1,2]
 
 # --- Implicit Variables --- #
 c = -6
 d = False
 ccc = 'c'
 st = "Implicit Var"
+ll = [1,2]
 
 # --- Testing --- #
 bool E = not False
 int F = 1
+F = c
+lll = L
 
 # stream STR = "" #Temporary would be input/output stream object
 # STR >> F #Read from cin and place in F (cin would be a input stream object)

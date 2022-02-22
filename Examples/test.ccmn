@@ -1,36 +1,42 @@
-Examples/test	2021/12/12/08/21 22:18 UTC
+Examples/test	2022/02/02/22/22 22:55 UTC
 
     1| # --- Explicit Constants --- #
     2| frozen int A = 5
     3| frozen bool B = True
     4| frozen char CC = 'C'
     5| frozen str S = "Explicit Const"
-    6| 
-    7| # --- Implicit Constants --- #
-    8| frozen C = +4
-    9| frozen D = False
-   10| frozen CCC = 'C'
-   11| frozen ST = "Implicit Const"
-   12| 
-   13| # --- Explicit Variables --- #
-   14| int a = -5
-   15| bool b = True
-   16| char cc = 'c'
-   17| str s = "Explicit Var"
-   18| 
-   19| # --- Implicit Variables --- #
-   20| c = -6
-   21| d = False
-   22| ccc = 'c'
-   23| st = "Implicit Var"
-   24| 
-   25| # --- Testing --- #
-   26| bool E = not False
-   27| int F = 1
+    6| frozen list L = [1,2]
+    7| 
+    8| # --- Implicit Constants --- #
+    9| frozen C = +4
+   10| frozen D = False
+   11| frozen CCC = 'C'
+   12| frozen ST = "Implicit Const"
+   13| frozen LL = [1,2]
+   14| 
+   15| # --- Explicit Variables --- #
+   16| int a = -5
+   17| bool b = True
+   18| char cc = 'c'
+   19| str s = "Explicit Var"
+   20| list l = [1,2]
+   21| 
+   22| # --- Implicit Variables --- #
+   23| c = -6
+   24| d = False
+   25| ccc = 'c'
+   26| st = "Implicit Var"
+   27| ll = [1,2]
    28| 
-   29| # stream STR = "" #Temporary would be input/output stream object
-   30| # STR >> F #Read from cin and place in F (cin would be a input stream object)
-   31| # STR << E #Write E to cout (cout would be a output stream object)
-   32| # STR << st #Write st to cout (cout would be a output stream object)
-   33| 
-   34| # raise Exception("Hello World!")
+   29| # --- Testing --- #
+   30| bool E = not False
+   31| int F = 1
+   32| F = c
+   33| lll = L
+   34| 
+   35| # stream STR = "" #Temporary would be input/output stream object
+   36| # STR >> F #Read from cin and place in F (cin would be a input stream object)
+   37| # STR << E #Write E to cout (cout would be a output stream object)
+   38| # STR << st #Write st to cout (cout would be a output stream object)
+   39| 
+   40| # raise Exception("Hello World!")
